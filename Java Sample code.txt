@@ -1,0 +1,39 @@
+JAVA CODE SAMPLES
+
+public class Calculator {
+
+public int add(int a, int b) {
+    return a + b;
+}
+
+public int factorial(int n) {
+    if (n <= 1) return 1;
+    else return n * factorial(n - 1);
+}
+}
+
+interface Shape {
+
+double area();
+}
+
+class Circle implements Shape { private double radius;
+
+public Circle(double radius) {
+    this.radius = radius;
+}
+
+public double area() {
+    return Math.PI * radius * radius;
+}
+}
+
+public class Divider {
+
+public static int divide(int a, int b) throws ArithmeticException {
+    if (b == 0) {
+        throw new ArithmeticException("Cannot divide by zero");
+    }
+    return a / b;
+}
+}
